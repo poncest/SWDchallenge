@@ -47,3 +47,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# camcorder temp_plot folder
+temp_plots/
+
+
