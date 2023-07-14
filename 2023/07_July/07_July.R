@@ -92,9 +92,6 @@ caption_text  <- str_glue("{tt} Visualization: {tw} @sponce1 &bull; {mn} @sponce
 
 # |-  fonts ----
 font_add('fa-brands', 'fonts/fa-brands-400.ttf')
-
-#font_add('fa-brands', 'fonts/Font Awesome 5 Brands-Regular-400.otf')
-
 font_add_google("Audiowide", family = "title")                            
 font_add_google("Ruda", family = "subtitle")              
 font_add_google("Ruda", family = "text")                  
