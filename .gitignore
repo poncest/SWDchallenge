@@ -51,4 +51,5 @@ rsconnect/
 # camcorder temp_plot folder
 temp_plots/
 
-
+# README html
+*.html
