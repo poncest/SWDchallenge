@@ -12,6 +12,12 @@
 #' Reference: https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-01-17/readme.md
 
 
+## 0. LINKS ----
+#' challenge info: https://community.storytellingwithdata.com/challenges/jul-2023-bring-on-the-bubbles
+#' my contribution: https://community.storytellingwithdata.com/challenges/jul-2023-bring-on-the-bubbles/art-history-books
+
+
+
 ## 1. LOAD PACKAGES & SETUP ----  
 pacman::p_load(tidyverse, tidytuesdayR, ggtext, showtext, janitor, camcorder, scales, lubridate)
 
