@@ -53,3 +53,6 @@ temp_plots/
 
 # README html
 *.html
+
+# MS PowerPoint - for post-processing edits
+.pptx
