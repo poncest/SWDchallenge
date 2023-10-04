@@ -94,7 +94,7 @@ title_text    <- str_glue("The Popularity of Leo, 1990-2017")
 subtitle_text <- str_glue("It's interesting to note that <span style='font-size:16pt; color:#addcff'>**Leo**</span> is still a popular choice for parents when it comes to naming<br>",
                           "their babies in the USA. The Social Security Administration confirms that Leo is among<br>",
                           "the top names for boys, and it's not hard to see why. <span style='font-size:16pt; color:#addcff'>**Leo Messi**</span>, the soccer superstar,<br>",
-                          "continues toimpress with his exceptional skills on the field. It's no wonder that parents<br>",
+                          "continues to impress with his exceptional skills on the field. It's no wonder that parents<br>",
                           "are inspired by his performance of dreams and choose to name their babies after him.<br>",
                           )
 

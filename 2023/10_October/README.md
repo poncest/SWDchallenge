@@ -1,4 +1,4 @@
 
 
-![](img/10_October.png)
+![](img/10_October.png) 
 
