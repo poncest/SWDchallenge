@@ -25,10 +25,10 @@ camcorder::gg_record(
   width  = 10,
   height = 15,
   units  = "in",
-  dpi    = 600) 
+  dpi    = 320) 
 
 # |- resolution ---- 
-showtext_opts(dpi = 600)
+showtext_opts(dpi = 320)
 
 
 ## 2. READ IN THE DATA ----
