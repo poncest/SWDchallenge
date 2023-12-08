@@ -27,46 +27,6 @@ all_2023_img <- all_2023_files[which(str_detect(all_2023_files, "\\.png"))]
 images_list <- (all_2023_img)
 
 # plot data
-# images_df <- data.frame(images_list) %>% 
-#   # pivot longer
-#   pivot_longer(cols = everything()) %>% 
-#   
-#   # rename
-#   rename(image_path = value) %>% 
-#   
-#   # mutate
-#   mutate(year  = str_extract(image_path, "[0-9]{4}"),
-#          year  = factor(year),
-#          count = 1) %>% 
-#   
-#   # select
-#   select(year, image_path, count) %>% 
-#   
-#   # filter out unwanted image
-#   mutate(
-#     temp = str_extract(image_path, "\\original"),
-#     action = case_when(
-#       temp == "original" ~ "remove",
-#       TRUE               ~ "keep")
-#   ) %>% 
-#   
-#   filter(action == "keep") %>% 
-#   
-#   # filter out unwanted image
-#   mutate(
-#     temp = str_extract(image_path, "version_02.png"),
-#     action = case_when(
-#       temp == "version_02.png" ~ "remove",
-#       TRUE                     ~ "keep")
-#   ) %>%   
-#   
-#   filter(action == "keep") %>% 
-#   
-# 
-#   select(year:count)
-
-
-
 images_df <- data.frame(images_list) %>% 
   # pivot longer
   pivot_longer(cols = everything()) %>% 
