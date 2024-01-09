@@ -14,7 +14,7 @@ This repo contains all related codes for the __#SWDchallenge__ challenge. My con
 ## Feel free to browse the `codes` and `viz`:
 * [2023](/2023/README.md)
 
-
+* [2024](/2024/README.md)
 
 ## Montage
 ![Montage](https://github.com/poncest/SWDchallange/blob/main/summary/image_plot.png "Montage")
