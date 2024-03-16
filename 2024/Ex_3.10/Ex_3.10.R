@@ -74,8 +74,8 @@ X  <- str_glue("<span style='font-family:fa6-brands'>&#xe61b;</span>")
 gh <- str_glue("<span style='font-family:fa6-brands'>&#xf09b;</span>")
 mn <- str_glue("<span style='font-family:fa6-brands'>&#xf4f6;</span>")
 
-title_text    <- str_glue("The payment for home equity line of credit\nhas increased by 60% since 2020.") 
-
+title_text    <- str_glue("The home equity line of credit payment has\nincreased by 60% since 2020")
+                          
 subtitle_text <- str_glue("Percent Auto Pay") 
 
 caption_text  <- str_glue("{tt} Visualization: {X} @sponce1 &bull; {mn} @sponce1(graphic.social) Code: {gh} poncest &bull; Tools: #rstats #ggplot2")
