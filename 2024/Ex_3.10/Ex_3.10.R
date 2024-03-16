@@ -25,7 +25,8 @@ showtext_opts(dpi = 320, regular.wt = 300, bold.wt = 800)
 
 ## 2. READ IN THE DATA ----
 
-# Data Link: https://docs.google.com/spreadsheets/d/1y-bFjLgL8kOcwR1DqJGMzMn88WaQJnAt/edit?usp=drive_link&ouid=101369070286981421257&rtpof=true&sd=true
+# Initial Plot: https://community.storytellingwithdata.com/exercises/remove-the-unessential
+# Data Link:    https://docs.google.com/spreadsheets/d/1y-bFjLgL8kOcwR1DqJGMzMn88WaQJnAt/edit?usp=drive_link&ouid=101369070286981421257&rtpof=true&sd=true
 
 raw_data <- tibble(	Year              = c(2020,	2021,	2022,	2023),
         `Credit Card`	                = c(92.1,	89.4,	94.0,	97.1),
