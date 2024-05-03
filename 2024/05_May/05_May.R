@@ -205,8 +205,8 @@ p2 <- create_beeswarm_plot(plot_data, "season", "imdb_rating", "IMDb Rating") +
     aes(
       x0 = 5.1,
       y0 = 4.6,
-      label = "S21Ep04 - The Munchurian Candidate, 2022",
-      description = str_glue("1.01M US viewers and 7.7 IMDb rating")
+      label = "S17Ep16 - You Can't Handle the Booth!, 2019",
+      description = str_glue("2.01M US viewers and 4.1 IMDb rating")
     ),
     expand = 0.05,
     color          = "gray70",
