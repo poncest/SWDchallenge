@@ -1,4 +1,4 @@
-# \#**SWDchallenge** Challenge
+# \#**SWDchallenge** 
 
 <!-- table header, followed by pictures link -->
 
