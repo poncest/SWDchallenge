@@ -3,7 +3,7 @@
 <!-- table header, followed by pictures link -->
 
 |                   [January](https://github.com/poncest/SWDchallenge/tree/main/2024/01_Jan)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[Upskill with UpSets](https://github.com/poncest/SWDchallenge/tree/main/2024/01_Jan)                    |
-|:----------------------------------------------------:|
+|:----------------------------------------------------------------------:|
 |                                                                                                                    ![](01_Jan/img/01_Jan.png "Jan")                                                                                                                    |
 |                                                                                   [March<br>Design for accessibility](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)                                                                                   |
 |                                                                                                                    ![](03_Mar/img/03_Mar.png "Mar")                                                                                                                    |
@@ -19,4 +19,5 @@
 |                                                                                                                   ![](06_Jun/img/06_Jun.png "June")                                                                                                                    |
 |                [June Exercise](https://github.com/poncest/SWDchallenge/tree/main/2024/Ex_051)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[make the point clear](https://github.com/poncest/SWDchallenge/tree/main/2024/Ex_051)                |
 |                                                                                                                       ![](Ex_051/img/Ex_051.png)                                                                                                                       |
-|                                                                                                                                                                                                                                                                        |
+|                  [August](https://github.com/poncest/SWDchallenge/tree/main/2024/08_aug)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[visualize the Olympics](https://github.com/poncest/SWDchallenge/tree/main/2024/08_Aug)                   |
+|                                                                                                                  ![](08_Aug/img/08_Aug.png "August")                                                                                                                   |
