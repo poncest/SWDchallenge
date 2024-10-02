@@ -56,3 +56,6 @@ temp_plots/
 
 # MS PowerPoint - for post-processing edits
 .pptx
+
+# Scrapt file
+scrapt.R
