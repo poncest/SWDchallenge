@@ -47,6 +47,7 @@ glimpse(sales_data)
 
 ### |- Create a gt table ----
 sales_table <- sales_data |>
+  arrange(desc(sales_volume)) |>  # Reorder by Sales Volume descending
   gt() |>
   tab_header(
     title = md("**WakeUp Coffee Sales Summary**"),
@@ -74,11 +75,23 @@ sales_table <- sales_data |>
       )
     }
   ) |>
+  # Emphasize Account H
+  tab_style(
+    style = list(
+      cell_fill(color = "#D3E4CD"),
+      cell_text(color = "black")
+    ),
+    locations = cells_body(
+      rows = account == "H" & percent_change_vs_prior == max(percent_change_vs_prior)
+    )
+  ) |>
+  # Now add the color gradient for the % Change column
   data_color(
     columns = c(percent_change_vs_prior),
-    fn = col_numeric(
-      domain = c(-0.1, 0.4),
-      palette = c("#CA0020", "#F4A582", "#92C5DE", "#0571B0")
+    fn = col_bin(
+      bins = c(-0.1, -0.04, 0, 0.065, 0.4), 
+      palette = c("#CA0020", "#F4A582", "#92C5DE", "#0571B0"),
+      na.color = "transparent"  
     )
   ) |>
   cols_align(
@@ -100,8 +113,8 @@ sales_table <- sales_data |>
   tab_source_note(
     source_note = html("<span style='font-size: 10px;'>UPC is the Universal Product Code, the barcode symbology.<br>ACV is All-Commodity Volume, measured as a percentage from 0 to 100.</span>")
   ) |>
-  tab_footnote(
-    footnote = md("<span style='font-size: 14px;'>**Account H shows the highest positive growth (+37.90%)**, **Account D has the highest sales volume ($547,265)**, **Accounts J and E show significant declines**</span>"),
+  ttab_footnote(
+    footnote = md("**Account H shows the highest positive growth (+37.90%)**, **Account D has the highest sales volume ($547,265)**, **Account J shows the largest decrease (-8.70%)**</span>"),
     locations = cells_title(groups = "title")
   ) |>
   tab_style(
@@ -129,15 +142,6 @@ sales_table <- sales_data |>
       cells_body(columns = everything()),          # Data cells
       cells_stub(rows = everything()),             # Row labels (stub)
       cells_source_notes()                         # Source notes
-    )
-  ) |>
-  tab_style(
-    style = list(
-      cell_fill(color = "#D3E4CD"),
-      cell_text(color = "black")
-    ),
-    locations = cells_body(
-      rows = account == "H" & percent_change_vs_prior == max(percent_change_vs_prior)
     )
   )
 
