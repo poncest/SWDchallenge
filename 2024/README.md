@@ -3,7 +3,7 @@
 <!-- table header, followed by pictures link -->
 
 | [January](https://github.com/poncest/SWDchallenge/tree/main/2024/01_Jan)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[Upskill with UpSets](https://github.com/poncest/SWDchallenge/tree/main/2024/01_Jan) |
-|:--:|
+|:----------------------------------------------------------------------:|
 | ![](01_Jan/img/01_Jan.png "Jan") |
 | [March<br>Design for accessibility](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar) |
 | ![](03_Mar/img/03_Mar.png "Mar") |
@@ -27,4 +27,5 @@
 | ![](10_Oct/img/10_Oct.png "October") |
 | [October Exercise](https://github.com/poncest/SWDchallenge/tree/main/2024/Ex_046)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[apply emphasis to this table](https://github.com/poncest/SWDchallenge/tree/main/2024/Ex_046) |
 | ![](Ex_046/img/Ex_046.png "October Exercise") |
-|  |
+| [November](https://github.com/poncest/SWDchallenge/tree/main/2024/11_Nov)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[make a good graph](https://github.com/poncest/SWDchallenge/tree/main/2024/11_Nov) |
+| ![](11_Nov/img/11_Nov.png "November") |

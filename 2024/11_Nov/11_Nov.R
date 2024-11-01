@@ -2,7 +2,7 @@
 # Challenge:  #SWDchallenge 2024 -- November
 ## Topic:     NOV 2024 | make a good graph
 ## Author:    Steven Ponce
-## Date:      2024-11-02
+## Date:      2024-11-01
 
 
 ## 0. DATA SOURCE ----
@@ -23,7 +23,8 @@ pacman::p_load(
   scales,            # Scale Functions for Visualization
   glue,              # Interpreted String Literals
   here,              # A Simpler Way to Find Your Files
-  tidytuesdayR       # Access the Weekly 'TidyTuesday' Project Dataset
+  tidytuesdayR,      # Access the Weekly 'TidyTuesday' Project Dataset
+  ggrepel            # Automatically Position Non-Overlapping Text Labels with 'ggplot2'
 ) 
 
 ### |- figure size ---- 
@@ -40,7 +41,7 @@ showtext_opts(dpi = 320, regular.wt = 300, bold.wt = 800)
 
 
 ## 2. READ IN THE DATA ----
-eurovision <- tidytuesdayR::tt_load(2022, week = 20)$eurovision %>% 
+eurovision <- tidytuesdayR::tt_load(2022, week = 20)$eurovision |> 
   clean_names() |> 
   glimpse()
 
@@ -55,39 +56,55 @@ colnames(eurovision)
 
 ## 4. TIDYDATA ----
 
-# Add winners for 2023 and 2024
-eurovision_additional <- tibble(
+# Winners from 1956 to 2003
+winners_1956_2003_tbl <- eurovision |> 
+  filter(year < 2004,
+         section == 'final',
+         winner == TRUE) |> 
+  select(year, host_city, artist_country, total_points, winner) |> 
+  arrange(desc(year)) |> 
+  drop_na()
+
+# Winners from 2004 to 2022
+winners_2004_2022_tbl <- eurovision |> 
+  filter(section == 'grand-final',
+         winner == TRUE) |> 
+  select(year, host_city, artist_country, total_points, winner) |> 
+  arrange(desc(year)) |> 
+  drop_na()
+
+# Winners for 2023 and 2024
+winners_2023_2024_tbl <- tibble(
   year = c(2023, 2024),
+  host_city = c("Liverpool", "Malmö"),  
   artist_country = c("Sweden", "Switzerland"),
+  total_points = c(583, 591),  # Placeholder points, adjust based on real data if available
   winner = TRUE
 )
+ 
+# Combine all winners
+winners_combined_tbl <- bind_rows(winners_1956_2003_tbl, winners_2004_2022_tbl, winners_2023_2024_tbl) |>
+  arrange(year) |>
+  drop_na()
 
-# Combine with original dataset
-eurovision <- eurovision |> 
-  bind_rows(eurovision_additional) |> 
-  clean_names()
-
-# Filter only countries with more than 3 wins
-eurovision_summary <- eurovision |> 
-  filter(winner == TRUE) |> 
-  count(artist_country) 
-
-# Filter the original data to include only those countries
-eurovision_filtered <- eurovision |> 
-  filter(winner == TRUE & artist_country %in% eurovision_summary$artist_country)
-
-# Create a summary of total wins for each country
-eurovision_total_wins <- eurovision_filtered |> 
-  count(artist_country, name = "total_wins") |> 
-  arrange(desc(total_wins))
-
-# data plot
-cumulative_data <- eurovision |> 
-  filter(winner == TRUE) |>
-  count(year, artist_country) |>
+# Calculate cumulative wins by year
+cumulative_data <- winners_combined_tbl |>
+  group_by(year, artist_country) |>
+  summarise(total_points = sum(total_points), .groups = "drop") |>
+  arrange(year) |>
   group_by(artist_country) |>
-  mutate(cumulative_wins = cumsum(n))
+  mutate(cumulative_wins = row_number()) |>
+  ungroup()
 
+# Define key countries to highlight
+key_countries <- c("Sweden", "Ireland")
+
+# Get the most recent year for each key country
+latest_year_data <- cumulative_data |> 
+  filter(artist_country %in% key_countries) |> 
+  group_by(artist_country) |> 
+  filter(year == max(year)) |> 
+  ungroup()
 
 
 # 5. VISUALIZATION ---- 
@@ -108,7 +125,7 @@ gh <- str_glue("<span style='font-family:fa6-brands'>&#xf09b;</span>")
 bs <- str_glue("<span style='font-family:fa6-brands'>&#xe671; </span>")
 
 # text
-title_text    <- str_glue("Eurovision: Sweden and Ukraine Lead with the Most Wins")
+title_text    <- str_glue("Eurovision: Sweden and Ireland Lead with the Most Wins")
 subtitle_text <- str_glue("Tracking Eurovision Wins by Country from 1956 to 2024<br><br>
                           **Total Wins Since Inception**")
 caption_text  <- str_glue("{tt} {li} stevenponce &bull; {bs} sponce1 &bull; {gh} poncest &bull; #rstats #ggplot2")
@@ -147,11 +164,8 @@ theme_update(
 
 ### |- initial plot ----
 
-# Define key countries to highlight
-key_countries <- c("Sweden", "Ukraine")
-
 #  Line Chart 
-# cumulative_line_chart <-
+cumulative_line_chart <-
   # Geoms
   ggplot(
     cumulative_data,
@@ -166,24 +180,25 @@ key_countries <- c("Sweden", "Ukraine")
     linewidth = 1.2
   ) +
   geom_point(
-    data = cumulative_data |> filter(artist_country %in% key_countries & year == max(year)),
+    data = latest_year_data,
     aes(color = artist_country), size = 4, shape = 21, fill = "white", stroke = 2
   ) +
   geom_text(
-    data = cumulative_data |> filter(artist_country %in% key_countries & year == max(year)),
-    aes(label = str_glue("{artist_country} ({cumulative_wins})")),
-    hjust = -0.15, size = 4, fontface = "bold"
+    data = latest_year_data,
+    aes(label = str_glue("{artist_country} ({cumulative_wins})\n{year}")),
+    vjust = -0.5,
+    hjust = 0.2, nudge_x = 1, size = 4, fontface = "bold", lineheight = 1
   ) +
-  
+
   # Scales
   scale_x_continuous(
     breaks = pretty_breaks(n = 5),
     limits = c(min(cumulative_data$year), max(cumulative_data$year) + 5)
   ) +
   scale_y_continuous(
-    breaks = seq(0, 15, by = 3),
-    limits = c(1, 15)
-  ) +
+    breaks = seq(0, 8, by = 2),
+    limits = c(0, 8)
+  )+
   scale_color_manual(values = col_palette) +
   coord_cartesian(clip = "off") +
   
