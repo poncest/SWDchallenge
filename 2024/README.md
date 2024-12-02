@@ -29,3 +29,5 @@
 | ![](Ex_046/img/Ex_046.png "October Exercise") |
 | [November](https://github.com/poncest/SWDchallenge/tree/main/2024/11_Nov)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[make a good graph](https://github.com/poncest/SWDchallenge/tree/main/2024/11_Nov) |
 | ![](11_Nov/img/11_Nov.png "November") |
+| [December](https://github.com/poncest/SWDchallenge/tree/main/2024/12_Dec)[<br>](https://github.com/poncest/SWDchallenge/tree/main/2024/03_Mar)[tell me something good](https://github.com/poncest/SWDchallenge/tree/main/2024/12_Dec) |
+| ![](12_Dec/img/12_Dec.png "December") |
