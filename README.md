@@ -1,20 +1,51 @@
-# What is the #SWDchallenge?
+# Storytelling with Data Challenge (#SWDchallenge)
 
-> The #SWDchallenge is a monthly challenge where you can practice and apply data visualization and storytelling skills. This is a safe space to try something new: test out a new tool, technique, or approach. You don't need to participate in one, a couple, or all. We encourage everyone to participate: all backgrounds, experience levels, and tools used are welcome. Each month has a different topic, announced at the beginning of the month. Participants have a week to find data, create and share their visual and related commentary. We're currently focusing mainly on different graph types, but sometimes change it up with a tip to try or a specific topic. This is a fun reason to flex your skills and share your creations.
-> 
-> All submissions received by the deadline are shared in a recap post later in the month. 
+## About the Challenge
 
-More information can be found [HERE!](https://community.storytellingwithdata.com/challenges//nov-2020-explain-the-change)
+The #SWDchallenge is a monthly visualization challenge focused on data storytelling. Each month features:
+- A new visualization topic or technique
+- One week to create and share your visualization
+- Community feedback and learning opportunities
+- Recap post featuring all submissions
 
+Key aspects:
+- Safe space for experimentation
+- Open to all experience levels
+- Tool-agnostic approach
+- Focus on effective storytelling through data
 
-## Where to find my contributions?
-This repo contains all related codes for the __#SWDchallenge__ challenge. My contributions are posted in [Twitter](https://twitter.com/sponce1) and [LinkedIn](https://www.linkedin.com/in/stevenponce/). 
+> This challenge provides an excellent opportunity to experiment with new visualization techniques, receive feedback, and engage with the data storytelling community.
 
+## Challenge Structure
 
-## Feel free to browse the `codes` and `viz`:
-* [2023](/2023/README.md)
+Each month:
+1. New topic announced at month start
+2. One week for creation and submission
+3. Participants share visuals and commentary
+4. Recap post featuring all submissions
 
-* [2024](/2024/README.md)
+Topics include:
+- Various graph types
+- Visualization techniques
+- Storytelling approaches
+- Special themes
 
-## Montage
-![Montage](https://github.com/poncest/SWDchallange/blob/main/summary/image_plot.png "Montage")
+Learn more at the [SWD Community Challenge Page](https://community.storytellingwithdata.com/challenges//nov-2020-explain-the-change).
+
+## My Contributions
+
+Find my visualizations on:
+- [X](https://x.com/sponce1)
+- [LinkedIn](https://www.linkedin.com/in/stevenponce/)
+- [Bluesky](https://bsky.app/profile/sponce1.bsky.social)
+
+## Repository Structure
+
+Browse my code and visualizations by year:
+- [2023](/2023/README.md)
+- [2024](/2024/README.md)
+- [2025](/2025/README.md)
+
+## Visualization Gallery
+
+![SWD Challenge Contributions](https://github.com/poncest/SWDchallange/blob/main/summary/image_plot.png "Gallery of my SWD Challenge visualizations")
