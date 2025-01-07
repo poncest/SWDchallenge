@@ -137,7 +137,7 @@ sentiment_flow <- review_sentiments |>
   mutate(prop = n/sum(n)) |>
   ungroup()
 
-# 3. Temporal Pattern (keeping existing structure)
+# 3. Temporal Pattern 
 temporal_pattern <- review_sentiments |>
   group_by(reviewer) |>
   mutate(
@@ -234,11 +234,14 @@ p1 <- sentiment_flow |>
   scale_y_continuous(labels = scales::percent) +
   labs(
     title = "<b>Distribution of Emotional Content by Rating</b>",
-    fill = "Emotional Theme"
+    fill = "Emotional Theme",
+    x = "Rating Category",
+    y = "Proportion of Emotions",
   ) +
   theme_minimal() +
   theme(
-    plot.title = element_markdown(size = 12),
+    plot.title = element_markdown(size = rel(1)),
+    legend.position = "right",
     plot.margin = margin(t = 10, r = 10, b = 20, l = 10)
   )
 
@@ -264,7 +267,7 @@ p2 <- temporal_pattern |>
   ) +
   theme_minimal() +
   theme(
-    plot.title = element_markdown(size = 12),
+    plot.title = element_markdown(size = rel(1)),
     legend.position = "right",
     panel.grid.minor = element_blank(),
     plot.margin = margin(t = 10, r = 10, b = 20, l = 10)
@@ -274,7 +277,7 @@ p2 <- temporal_pattern |>
 p3 <- complexity_analysis |> 
   ggplot(aes(x = words_per_sentence, y = rating_category, fill = rating_category)) +
   stat_gradientinterval(
-    aes(color = rating_category),
+    aes(color = after_scale(fill)), 
     point_size = 1.2,
     alpha = 0.3,
     point_alpha = 0.7
@@ -286,22 +289,16 @@ p3 <- complexity_analysis |>
       "Positive (4-5)" = "#86B8B1"
     )
   ) +
-  scale_color_manual(
-    values = c(
-      "Negative (1-2)" = "#E69B95",
-      "Neutral (3)"    = "#709BB0",
-      "Positive (4-5)" = "#86B8B1"
-    )
-  ) +
   labs(
     title = "<b>Review Complexity by Rating</b>",
     x = "Words per Sentence",
-    y = NULL
+    y = NULL,
+    fill = "Rating Category"
   ) +
   theme_minimal() +
   theme(
-    plot.title = element_markdown(size = 12),
-    legend.position = "none",
+    plot.title = element_markdown(size = rel(1)),
+    legend.position = "right",
     panel.grid.major.y = element_blank(),
     plot.margin = margin(t = 10, r = 10, b = 20, l = 10)
   )
@@ -317,8 +314,9 @@ p4 <- bigram_graph |>
   ) +
   theme_minimal() +
   theme(
-    plot.title = element_markdown(size = 12),
-    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_markdown(size = rel(1)),
+    legend.position = "right",
+    axis.text.x = element_text(hjust = 1),
     panel.grid = element_line(color = "grey90"),
     plot.margin = margin(t = 10, r = 10, b = 20, l = 10)
   )
@@ -327,7 +325,7 @@ p4 <- bigram_graph |>
 combined_plots <- (p1 + p2) /
   (p3 + p4) +
   plot_layout(heights = c(1, 1.2)) +
-  plot_layout(guides = 'collect') +  
+  # plot_layout(guides = 'collect') +  
   plot_annotation(
     title = title_text,
     subtitle = subtitle_text,
