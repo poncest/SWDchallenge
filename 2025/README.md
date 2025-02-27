@@ -9,5 +9,7 @@
 | ![](Ex_037/img/Ex_037.png "Jan Exercise") |
 | [February](https://github.com/poncest/SWDchallenge/tree/main/2025/02_Feb)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[reclaim the streamgraph](https://github.com/poncest/SWDchallenge/tree/main/2025/02_Feb) |
 | ![](02_Feb/img/02_Feb.png "Feb") |
+| [February Exercise](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_055)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[go crazy or keep it simple](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_055) |
+| ![](Ex_055/img/Ex_055.png "Feb Exercise")![]() |
 |  |
 |  |
