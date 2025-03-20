@@ -13,3 +13,6 @@
 | ![](Ex_055/img/Ex_055.png "Feb Exercise")![]() |
 | [March](https://github.com/poncest/SWDchallenge/tree/main/2025/03_Mar)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[present disappointing results](https://github.com/poncest/SWDchallenge/tree/main/2025/03_Mar) |
 | ![](03_Mar/img/03_Mar.png "Mar") |
+| [March Exercise](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_056)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[resist the temptation to show all the data](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_056) |
+| ![](Ex_056/img/Ex_056.png "March Exercise") |
+|  |
