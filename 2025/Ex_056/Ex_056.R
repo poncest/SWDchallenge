@@ -14,6 +14,8 @@
 #' https://docs.google.com/spreadsheets/d/1P6G8z8Wcj4GtSkxkhBmaSS3AAeXPgJeZ/edit?gid=1336591892#gid=1336591892
 #' 
 
+## Updated to incorporate feedback from Antti Rask
+
 
 ## 1. LOAD PACKAGES & SETUP ----   
 if (!require("pacman")) install.packages("pacman")
@@ -104,24 +106,52 @@ highlight_data <- tidy_data |>
 
 ## 5. VISUALIZATION ---- 
 # Get base colors with custom palette
-colors <- get_theme_colors(
-  palette = c(
-    "grocery" = "#D73027",  
-    "hardware" = "#F46D43",  
-    "toys" = "#FDAE61"  
-  )
+
+# Get the departments in the correct order (by volatility)
+volatile_departments <- summary_stats |> 
+  slice_max(order_by = sd_growth, n = 3) |> 
+  pull(department)
+
+# Create a categorical palette for three volatile departments
+cat_colors <- c(
+  "grocery" = "#0F62FE",   
+  "hardware" = "#FF7EB6",  
+  "toys" = "#6929C4"        
 )
 
-colors2 <- get_theme_colors(
-  palette = c(
-    "FALSE" = "gray50",
-    "TRUE" = "#D73027"
-  )
+# Get the rest of the departments
+other_departments <- setdiff(unique(tidy_data$department), volatile_departments)
+
+# Create a palette for all departments (both highlighted and non-highlighted)
+all_dept_colors <- c(cat_colors, 
+                     setNames(rep("gray80", length(other_departments)), 
+                              other_departments))
+
+# Colors theme function
+colors <- get_theme_colors(
+  palette = all_dept_colors
 )
 
 ### |-  titles and caption ----
 title_text <- str_glue("Retail Department Performance Analysis: Growth and Volatility")
 subtitle_text <- str_glue("Understanding stability patterns and growth trajectories across retail categories\n(Jan 2024 - Mar 2025)")
+
+# Format the names with colors for the descriptive title
+grocery_color <- cat_colors["grocery"]
+hardware_color <- cat_colors["hardware"]
+toys_color <- cat_colors["toys"]
+
+# P1 chart title
+rich_title <- glue::glue(
+  "<span style='color:{grocery_color}'>Grocery</span>, ",
+  "<span style='color:{hardware_color}'>Hardware</span>, and ",
+  "<span style='color:{toys_color}'>Toys</span> are the three most volatile departments"
+)
+
+# P2 chart title
+rich_title_p2 <- glue::glue(
+  "<span style='color:{grocery_color}'>Grocery</span> shows highest volatility despite below-average growth"
+)
 
 # Create caption
 caption_text <- create_swd_exe_caption(
@@ -178,7 +208,7 @@ p1 <- ggplot() +
   ) +
   geom_line(data = tidy_data, 
             aes(x = date, y = growth, group = department), 
-            color = "#CCCCCC", linewidth = 0.2, alpha = 0.7
+            color = "gray", linewidth = 0.2, alpha = 0.8
   ) +
   geom_line(data = highlight_data,           # Highlighted volatile departments
             aes(x = date, y = growth, color = department), 
@@ -208,27 +238,33 @@ p1 <- ggplot() +
     labels = function(x) paste0(x, "%"),
     breaks = seq(-3, 7, by = 1)
   ) +
-  scale_color_manual(values = colors$palette) +
+  scale_color_manual(values = cat_colors) +  
   # Labs
   labs(
-    title = "Department Year-over-Year Growth Trends",
-    subtitle = paste("Highlighting the three most volatile departments based on standard deviation"),
-    y = "Growth vs Previous Year (%)",
+    title = rich_title,
+    subtitle = "Department Year-over-Year Growth Trends",
+    y = NULL,
     x = NULL,
-    caption = ""
   ) +
   # Theme
   theme(
-    panel.grid.major.y = element_line(color = "gray70")
+    panel.grid.major.y = element_line(color = "gray90"),
+    plot.title = element_markdown(
+      size = rel(1.1), 
+      family = fonts$title,
+      face = "bold",
+      margin = margin(b = 10)
+    )
   )
 
 # P2. Scatter Plot ----
 p2 <- ggplot(summary_stats,
-       aes(x = mean_growth, y = sd_growth, label = department)) +
+             aes(x = mean_growth, y = sd_growth, label = department)) +
   # Geoms
-  geom_point(aes(color = department %in% volatile_departments, 
-                 size = range_growth),
-             alpha = 0.7) +
+  geom_point(
+    aes(color = department, size = range_growth),
+    alpha = 0.8
+  ) +
   geom_text_repel(
     size = 3.5,
     box.padding = 0.5,
@@ -236,23 +272,31 @@ p2 <- ggplot(summary_stats,
     segment.color = "gray70"
   ) +
   # Scales
-  scale_color_manual(values = colors2$palette) +
+  scale_color_manual(
+    values = all_dept_colors  # applies the same colors to all departments
+  ) +
   scale_size_continuous(range = c(2, 6)) +
   labs(
-    title = "Department Growth: Volatility vs. Average Performance",
-    subtitle = "Size represents the range between minimum and maximum growth values",
+    title = rich_title_p2,
+    subtitle = "Department Performance: Comparing Growth and Volatility",
     x = "Mean Growth Rate (%)",
-    y = "Standard Deviation (Volatility)"
+    y = NULL   
   ) +
- # Theme
+  # Theme
   theme(
+    plot.title = element_markdown(
+      size = rel(1.1), 
+      family = fonts$title,
+      face = "bold",
+      margin = margin(b = 10)
+    ),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = "grey70", linewidth = 0.1),
   )
 
 # Combined Plot -----
 combined_plot <- (p1 / p2) +
-  plot_layout(widths = c(1, 1))   
+  plot_layout(heights = c(1, 1))   
 
 combined_plot <- combined_plot +
   plot_annotation(
