@@ -17,4 +17,6 @@
 | ![](Ex_056/img/Ex_056.png "March Exercise") |
 | [May](https://github.com/poncest/SWDchallenge/tree/main/2025/05_May)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[compare human and machine](https://github.com/poncest/SWDchallenge/tree/main/2025/05_May) |
 | ![](05_May/img/05_May.png "May") |
+| [May Exercise](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_058)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[which chart shows it best?](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_058) |
+| ![](Ex_058/img/Ex_058.png "May Exercise") |
 |  |
