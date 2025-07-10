@@ -1,0 +1,13 @@
+Department,TenureRange,Average Engagement,Average Salary,Average Performance Rating
+Engineering,<1 year,65,"$85,000 ",3.7
+Engineering,1-5 years,80,"$110,000 ",4.2
+Engineering,5+ years,82,"$140,000 ",4.4
+Marketing,<1 year,78,"$62,000 ",3.9
+Marketing,1-5 years,72,"$80,000 ",4
+Marketing,5+ years,75,"$105,000 ",4.2
+HR,<1 year,60,"$55,000 ",3.5
+HR,1-5 years,62,"$70,000 ",3.8
+HR,5+ years,77,"$90,000 ",4
+Sales,<1 year,62,"$50,000 ",3.6
+Sales,1-5 years,81,"$75,000 ",4.3
+Sales,5+ years,85,"$120,000 ",4.6
