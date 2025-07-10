@@ -3,7 +3,7 @@
 <!-- table header, followed by pictures link -->
 
 | [January](https://github.com/poncest/SWDchallenge/tree/main/2025/01_Jan)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize qualitative data](https://github.com/poncest/SWDchallenge/tree/main/2025/01_Jan) |
-|:--:|
+|:----------------------------------------------------------------------:|
 | ![](01_Jan/img/01_Jan.png "Jan") |
 | [January Exercise](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_037)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[use space and alignment effectively](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_037) |
 | ![](Ex_037/img/Ex_037.png "Jan Exercise") |
@@ -23,6 +23,6 @@
 | ![](06_Jun/img/06_Jun.PNG "June") |
 | [July](https://github.com/poncest/SWDchallenge/tree/main/2025/07_Jul)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[find the right level of detail](https://github.com/poncest/SWDchallenge/tree/main/2025/07_Jul) |
 | ![](07_Jul/img/07_Jul_aggregated_view.png "July") |
-| [July](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_Jul)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize a multi-dimensional data table](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_Jul) |
+| [July](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_July)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize a multi-dimensional data table](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_July) |
 | ![](Ex_July/img/Ex_July_P4.png "Exercise July") |
 |  |
