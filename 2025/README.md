@@ -25,4 +25,7 @@
 | ![](07_Jul/img/07_Jul_aggregated_view.png "July") |
 | [July](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_July)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize a multi-dimensional data table](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_July) |
 | ![](Ex_July/img/Ex_July_P4.png "Exercise July") |
+| [August](https://github.com/poncest/SWDchallenge/tree/main/2025/08_Aug)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[style guides](https://github.com/poncest/SWDchallenge/tree/main/2025/08_Aug) |
+| ![](08_Aug/img/08_Aug.PNG "August") |
+|  |
 |  |
