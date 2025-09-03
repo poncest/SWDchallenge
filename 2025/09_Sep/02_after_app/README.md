@@ -47,7 +47,7 @@
 ### `A64_traffic.csv`
 
 | variable | class | description |
-|:------------------|:------------------|:-----------------------------------|
+|:---|:---|:---|
 | SiteId | character | Road sensor ID number. |
 | Site Name | character | Name of road sensor, also often a number. |
 | Report Date | character | Date that the data was recorded. |
