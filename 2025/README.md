@@ -28,6 +28,6 @@
 | [August](https://github.com/poncest/SWDchallenge/tree/main/2025/08_Aug)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[style guides](https://github.com/poncest/SWDchallenge/tree/main/2025/08_Aug) |
 | ![](08_Aug/img/08_Aug.PNG "August") |
 | [September](https://github.com/poncest/SWDchallenge/tree/main/2025/09_Sep)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[dashboards that deliver](https://github.com/poncest/SWDchallenge/tree/main/2025/09_Sep) |
-| ![](09_Sep/img/02_after_app.PNG "After") \| |
+| ![](09_Sep/img/02_after_app.PNG "After") |
 |  |
 |  |
