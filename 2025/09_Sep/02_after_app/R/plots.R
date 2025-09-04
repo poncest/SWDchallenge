@@ -88,7 +88,7 @@ plot_sensor_speed_spark <- function(df) {
   ggplot(d, aes(report_date, avg_speed)) +
     geom_line(linewidth = 0.8, color = .swd_col$neutral) +
     facet_wrap(~sensor,
-      nrow = 1, scales = "free_y",
+      nrow = 1, #scales = "free_y",
       labeller = labeller(sensor = function(x) paste0("Sensor ", x))
     ) +
     scale_y_continuous(expand = expansion(mult = c(0.05, 0.05))) +
