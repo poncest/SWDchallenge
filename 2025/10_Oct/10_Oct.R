@@ -18,8 +18,8 @@ pacman::p_load(
 camcorder::gg_record(
   dir    = here::here("temp_plots"),
   device = "png",
-  width  = 10,
-  height = 8,
+  width  = 8,
+  height = 6,
   units  = "in",
   dpi    = 320
 )
@@ -83,10 +83,11 @@ colors <- get_theme_colors(
 
 ### |-  titles and caption ----
 title_text <- str_glue("Health Funding Surges While Education Slips")
+
 subtitle_text <- str_glue(
-  "Funder priorities, 2020 -> 2025 (dashed = 2025 median)\n",
-  "Percentages can exceed 100% because funders choose multiple categories • Data self-reported by funders"
-  )
+  "Funder priorities shifted from 2020 to 2025 (sorted by current support level)\n",
+  "Data self-reported by funders • Percentages exceed 100% as funders support multiple categories"
+)
 
 # Create caption
 caption_text <- create_swd_caption(
@@ -120,7 +121,6 @@ weekly_theme <- extend_weekly_theme(
     panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = "grey95", linewidth = 0.1),
     
-
     # Legend elements
     legend.position = "plot",
     legend.title = element_text(family = fonts$text, size = rel(0.8)),
@@ -140,7 +140,7 @@ ggplot(arrow_data, aes(y = category)) +
   # Geoms
   geom_vline(
     xintercept = median_2025, linetype = "dashed",
-    color = "gray35", linewidth = 0.7
+    color = "gray55", linewidth = 0.25
   ) +
 
   # median tag
@@ -149,15 +149,22 @@ ggplot(arrow_data, aes(y = category)) +
     x = median_2025, y = n_cats + 0.35,
     label = paste0("2025 median: ", label_percent(accuracy = 1)(median_2025)),
     size = 3.2, fontface = "bold",
-    label.size = 0, fill = "white", alpha = 0.95, color = "gray15"
+    label.size = 0, fill = "white", alpha = 0.95, color = "gray35"
   ) +
 
   # arrows
   geom_segment(
     aes(x = y2020, xend = y2025, yend = category, color = change > 0),
     linewidth = 1.4, lineend = "round",
-    arrow = arrow(length = unit(0.28, "cm"), type = "closed")
+    arrow = arrow(length = unit(0.28, "cm"), type = "open")
   ) +
+  
+  # subtle background 
+  geom_rect(data = filter(arrow_data, change > 0),
+            aes(ymin = as.numeric(category) - 0.25, 
+                ymax = as.numeric(category) + 0.25),
+            xmin = 0, xmax = 0.9, 
+            fill = "gray", alpha = 0.1) +
 
   # arrows labels
   geom_text(aes(x = y2020, label = lab_2020, hjust = hjust_2020),
@@ -173,9 +180,8 @@ ggplot(arrow_data, aes(y = category)) +
   # Scales
   scale_x_continuous(
     labels = label_percent(accuracy = 1),
-    limits = c(0, max_x + 0.12),
-    breaks = seq(0, 0.90, by = 0.10),
-    expand = expansion(mult = c(0.01, 0.07))
+    limits = c(0, 0.9),
+    breaks = seq(0, 1, by = 0.20)
   ) +
   scale_y_discrete() +
   scale_color_manual(values = colors$palette) +
@@ -203,21 +209,21 @@ ggplot(arrow_data, aes(y = category)) +
       margin = margin(t = 5, b = 5)
     ),
     plot.subtitle = element_text(
-      size = rel(0.95),
+      size = rel(0.80),
       family = fonts$subtitle,
       color = alpha(colors$subtitle, 0.9),
       lineheight = 1.2,
       margin = margin(t = 5, b = 10)
     ),
     plot.caption = element_markdown(
-      size = rel(0.65),
+      size = rel(0.50),
       family = fonts$caption,
       color = colors$caption,
       hjust = 0.5,
       margin = margin(t = 10)
     )
-  )
-
+  ) 
+  
 
 # 6. SESSION INFO ----  
 sessioninfo::session_info(include_base = TRUE)
