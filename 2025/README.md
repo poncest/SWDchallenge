@@ -3,7 +3,7 @@
 <!-- table header, followed by pictures link -->
 
 | [January](https://github.com/poncest/SWDchallenge/tree/main/2025/01_Jan)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize qualitative data](https://github.com/poncest/SWDchallenge/tree/main/2025/01_Jan) |
-|:--:|
+|:----------------------------------------------------------------------:|
 | ![](01_Jan/img/01_Jan.png "Jan") |
 | [January Exercise](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_037)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[use space and alignment effectively](https://github.com/poncest/SWDchallenge/tree/main/2025/Ex_037) |
 | ![](Ex_037/img/Ex_037.png "Jan Exercise") |
@@ -33,5 +33,6 @@
 | ![](10_Oct/img/10_Oct.png "October") |
 | [November](https://github.com/poncest/SWDchallenge/tree/main/2025/11_Nov)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[discover the dot plot](https://github.com/poncest/SWDchallenge/tree/main/2025/11_Nov) |
 | ![](11_Nov/img/11_Nov.png "November") |
-|  |
+| [December](https://github.com/poncest/SWDchallenge/tree/main/2025/12_Dec)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[when less is better](https://github.com/poncest/SWDchallenge/tree/main/2025/12_Dec) |
+| ![](12_Dec/img/12_Dec.png "December") |
 |  |
