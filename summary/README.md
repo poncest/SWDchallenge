@@ -1,3 +1,1 @@
-
-![](image_plot.png)
- 
+![](swdchallenge_heatmap.png)
