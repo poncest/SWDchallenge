@@ -13,8 +13,8 @@
 | ![](03_Mar/img/03_Mar.png "March") |
 | [April](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize a timeline](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr) |
 | ![](04_Apr/img/04_Apr.png "April") |
-|  |
-|  |
+| [April](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[human + AI](https://github.com/poncest/SWDchallenge/tree/main/2026/05_May) |
+| ![](05_May/img/05_May.png "May") |
 |  |
 |  |
 |  |
