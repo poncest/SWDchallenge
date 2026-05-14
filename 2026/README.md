@@ -17,8 +17,8 @@
 | ![](05_May/img/05_May.png "May") |
 | [May Exercise](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_061)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[move from dashboard to decision](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_061) |
 | ![](Ex_061/img/Ex_061.png "May Excercise") |
-|  |
-|  |
+| [May Exercise](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_063)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[move from dashboard to decision](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_063) |
+| ![](Ex_063/img/Ex_063.png) |
 |  |
 |  |
 |  |
