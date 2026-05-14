@@ -2,7 +2,7 @@
 ## Challenge: #SWDchallenge 2026-- May (Exercise 6.3)
 ## Topic:     move from dashboard to decision
 ## Author:    Steven Ponce
-## Date:      2026-05-15
+## Date:      2026-05-14
 
 
 ## 0. DATA SOURCE ----
@@ -75,14 +75,15 @@ df <- raw_data |>
 
 # Annotation data
 anno_pts <- tibble(
-  month     = factor(c("APR", "NOV", "DEC"), levels = levels(df$month)),
+  month = factor(c("APR", "NOV", "DEC"), levels = levels(df$month)),
   month_num = c(4, 11, 12),
-  sla       = c(0.82, 0.83, 0.97)
+  sla = c(0.82, 0.83, 0.97)
 )
 
 
 ## 5. VISUALIZATION ---- 
 
+### |-  plot aesthetics ---
 colors <- get_theme_colors(
   palette = list(
     sla_line  = "#2E4057",   
@@ -117,8 +118,8 @@ subtitle_text <- glue(
 )
 
 caption_text <- create_swd_caption(
-  year        = 2026,
-  month       = "May",
+  year = 2026,
+  month  = "May",
   source_text = "Customer service dashboard · Exercise 6.3, Let's Practice! (Cole Nussbaumer Knaflic)"
 )
 
