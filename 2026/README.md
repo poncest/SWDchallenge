@@ -13,16 +13,16 @@
 | ![](03_Mar/img/03_Mar.png "March") |
 | [April](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[visualize a timeline](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr) |
 | ![](04_Apr/img/04_Apr.png "April") |
-| [April](https://github.com/poncest/SWDchallenge/tree/main/2026/04_Apr)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[human + AI](https://github.com/poncest/SWDchallenge/tree/main/2026/05_May) |
+| [May](https://github.com/poncest/SWDchallenge/tree/main/2026/05_May)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[human + AI](https://github.com/poncest/SWDchallenge/tree/main/2026/05_May) |
 | ![](05_May/img/05_May.png "May") |
 | [May Exercise](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_061)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[move from dashboard to decision](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_061) |
 | ![](Ex_061/img/Ex_061.png "May Excercise") |
 | [May Exercise](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_063)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[move from dashboard to decision](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_063) |
 | ![](Ex_063/img/Ex_063.png) |
-|  |
-|  |
-|  |
-|  |
+| [June](https://github.com/poncest/SWDchallenge/tree/main/2026/06_Jun)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[when normal is noteworthy](https://github.com/poncest/SWDchallenge/tree/main/2026/06_Jun) |
+| ![](06_Jun/img/06_Jun.png "June 2026") |
+| [July](https://github.com/poncest/SWDchallenge/tree/main/2026/07_Jul)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[have a ball: visualize the World Cup](https://github.com/poncest/SWDchallenge/tree/main/2026/07_Jul) |
+| ![](07_Jul/img/07_Jul.png "July") |
 |  |
 |  |
 |  |
