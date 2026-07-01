@@ -60,3 +60,10 @@ temp_plots/
 # Scrapt file
 scrapt.R
 .positai
+
+
+# large local data files
+2026/06_Jun/airline_2m.csv
+
+
+
