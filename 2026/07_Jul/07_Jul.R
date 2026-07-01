@@ -172,7 +172,7 @@ weekly_theme <- extend_weekly_theme(
     panel.grid       = element_blank(),
     legend.position  = "none",
     plot.title       = element_text(family = fonts$title_1, face = "bold", size = 20), margin = margin(b = 8),
-    plot.subtitle    = element_textbox_simple(family = fonts$sutitle, size = 9, margin = margin(t = 4, b = 8)),
+    plot.subtitle    = element_textbox_simple(family = fonts$subtitle, size = 9, margin = margin(t = 4, b = 8)),
     plot.caption     = element_markdown(family = fonts$caption, size = 7, color = "grey40")
   )
 )
