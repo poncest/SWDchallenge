@@ -23,8 +23,8 @@
 | ![](06_Jun/img/06_Jun.png "June 2026") |
 | [July](https://github.com/poncest/SWDchallenge/tree/main/2026/07_Jul)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[have a ball: visualize the World Cup](https://github.com/poncest/SWDchallenge/tree/main/2026/07_Jul) |
 | ![](07_Jul/img/07_Jul.png "July") |
-|  |
-|  |
+| [Aug](https://github.com/poncest/SWDchallenge/tree/main/2026/08_Aug)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[whip up a waterfall](https://github.com/poncest/SWDchallenge/tree/main/2026/08_Aug) |
+| ![](08_Aug/img/08_Aug.png "August 2026") |
 |  |
 |  |
 |  |
