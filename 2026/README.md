@@ -25,8 +25,8 @@
 | ![](07_Jul/img/07_Jul.png "July") |
 | [Aug](https://github.com/poncest/SWDchallenge/tree/main/2026/08_Aug)[<br>](https://github.com/poncest/tidytuesday/tree/main/2023/Week_02)[whip up a waterfall](https://github.com/poncest/SWDchallenge/tree/main/2026/08_Aug) |
 | ![](08_Aug/img/08_Aug.png "August 2026") |
-|  |
-|  |
+| [Sep<br>bump it!](https://github.com/poncest/SWDchallenge/tree/main/2026/09_Sep) |
+| ![](09_Sep/img/09_Sep.png "September") |
 |  |
 |  |
 |  |

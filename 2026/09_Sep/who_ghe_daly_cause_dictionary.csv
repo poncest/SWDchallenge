@@ -1,0 +1,216 @@
+code,cause,cause_level,hierarchy_1,hierarchy_2,hierarchy_3,hierarchy_4,hierarchy_5
+0,All Causes,0,NA,All Causes,NA,NA,NA
+10,"Communicable, maternal, perinatal and nutritional conditions",1,I.,"Communicable, maternal, perinatal and nutritional conditions",NA,NA,NA
+20,Infectious and parasitic diseases,2,NA,A.,Infectious and parasitic diseases,NA,NA
+30,Tuberculosis,3,NA,NA,1.,Tuberculosis,NA
+40,STDs excluding HIV,3,NA,NA,2.,STDs excluding HIV,NA
+50,Syphilis,4,NA,NA,NA,a.,Syphilis
+60,Chlamydia,4,NA,NA,NA,b.,Chlamydia
+70,Gonorrhoea,4,NA,NA,NA,c.,Gonorrhoea
+80,Trichomoniasis,4,NA,NA,NA,d.,Trichomoniasis
+85,Gential Herpes,4,NA,NA,NA,e.,Gential Herpes
+90,Other STDs,4,NA,NA,NA,f.,Other STDs
+100,HIV/AIDS,3,NA,NA,3.,HIV/AIDS,NA
+110,Diarrhoeal diseases,3,NA,NA,4.,Diarrhoeal diseases,NA
+120,Childhood-cluster diseases,3,NA,NA,5.,Childhood-cluster diseases,NA
+130,Whooping cough,4,NA,NA,NA,a.,Whooping cough
+140,Diphtheria,4,NA,NA,NA,b.,Diphtheria
+150,Measles,4,NA,NA,NA,c.,Measles
+160,Tetanus,4,NA,NA,NA,d.,Tetanus
+170,Meningitis,3,NA,NA,6.,Meningitis,NA
+180,Encephalitis,3,NA,NA,7.,Encephalitis,NA
+185,Hepatitis,3,NA,NA,8.,Hepatitis,NA
+186,Acute hepatitis A,4,NA,NA,NA,a.,Acute hepatitis A
+190,Acute hepatitis B,4,NA,NA,NA,b.,Acute hepatitis B
+200,Acute hepatitis C,4,NA,NA,NA,c.,Acute hepatitis C
+205,Acute hepatitis E,4,NA,NA,NA,d.,Acute hepatitis E
+210,Parasitic and vector diseases,3,NA,NA,9.,Parasitic and vector diseases,NA
+220,Malaria,4,NA,NA,NA,a.,Malaria
+230,Trypanosomiasis,4,NA,NA,NA,b.,Trypanosomiasis
+240,Chagas disease,4,NA,NA,NA,c.,Chagas disease
+250,Schistosomiasis,4,NA,NA,NA,d.,Schistosomiasis
+260,Leishmaniasis,4,NA,NA,NA,e.,Leishmaniasis
+270,lymphatic filariasis,4,NA,NA,NA,f.,lymphatic filariasis
+280,Onchocerciasis,4,NA,NA,NA,g.,Onchocerciasis
+285,Cysticercosis,4,NA,NA,NA,h.,Cysticercosis
+295,Echinococcosis,4,NA,NA,NA,i.,Echinococcosis
+300,Dengue,4,NA,NA,NA,j.,Dengue
+310,Trachoma,4,NA,NA,NA,k.,Trachoma
+315,Yellow fever,4,NA,NA,NA,l.,Yellow fever
+320,Rabies,4,NA,NA,NA,m.,Rabies
+330,Intestinal nematode infections,3,NA,NA,10.,Intestinal nematode infections,NA
+340,Ascariasis,4,NA,NA,NA,a.,Ascariasis
+350,Trichuriasis,4,NA,NA,NA,b.,Trichuriasis
+360,Hookworm disease,4,NA,NA,NA,c.,Hookworm disease
+362,Food-borne trematodes,4,NA,NA,NA,d.,Food-borne trematodes
+365,Leprosy,3,NA,NA,11.,Leprosy,NA
+370,Other infectious diseases,3,NA,NA,12.,Other infectious diseases,NA
+380,Respiratory Infectious,2,NA,B.,Respiratory Infectious,NA,NA
+390,Lower respiratory infections,3,NA,NA,1.,Lower respiratory infections,NA
+395,COVID-19,3,NA,NA,2.,COVID-19,NA
+400,Upper respiratory infections,3,NA,NA,3.,Upper respiratory infections,NA
+410,Otitis media,3,NA,NA,4.,Otitis media,NA
+420,Maternal conditions,2,NA,C.,Maternal conditions,NA,NA
+490,Neonatal conditions,2,NA,D.,Neonatal conditions,NA,NA
+500,Preterm birth complications,3,NA,NA,1.,Preterm birth complications,NA
+510,Birth asphyxia and birth trauma,3,NA,NA,2.,Birth asphyxia and birth trauma,NA
+520,Neonatal sepsis and infections,3,NA,NA,3.,Neonatal sepsis and infections,NA
+530,Other neonatal conditions,3,NA,NA,4.,Other neonatal conditions,NA
+540,Nutritional deficiencies,2,NA,E.,Nutritional deficiencies,NA,NA
+550,Protein-energy malnutrition,3,NA,NA,1.,Protein-energy malnutrition,NA
+560,Iodine deficiency,3,NA,NA,2.,Iodine deficiency,NA
+570,Vitamin A deficiency,3,NA,NA,3.,Vitamin A deficiency,NA
+580,Iron-deficiency anaemia,3,NA,NA,4.,Iron-deficiency anaemia,NA
+590,Other nutritional deficiencies,3,NA,NA,5.,Other nutritional deficiencies,NA
+600,Noncommunicable diseases,1,II.,Noncommunicable diseases,NA,NA,NA
+610,Malignant neoplasms,2,NA,A.,Malignant neoplasms,NA,NA
+620,Mouth and oropharynx cancers,3,NA,NA,1.,Mouth and oropharynx cancers,NA
+621,Lip and oral cavity,4,NA,NA,NA,a.,Lip and oral cavity
+622,Nasopharynx,4,NA,NA,NA,b.,Nasopharynx
+623,Other pharynx,4,NA,NA,NA,c.,Other pharynx
+630,Oesophagus cancer,3,NA,NA,2.,Oesophagus cancer,NA
+640,Stomach cancer,3,NA,NA,3.,Stomach cancer,NA
+650,Colon and rectum cancers,3,NA,NA,4.,Colon and rectum cancers,NA
+660,Liver cancer,3,NA,NA,5.,Liver cancer,NA
+661,Liver cancer secondary to hepatitis B,4,NA,NA,NA,a.,Liver cancer secondary to hepatitis B
+662,Liver cancer secondary to hepatitis C,4,NA,NA,NA,b.,Liver cancer secondary to hepatitis C
+663,Liver cancer secondary to alcohol use,4,NA,NA,NA,c.,Liver cancer secondary to alcohol use
+664,Other liver cancer,4,NA,NA,NA,d.,Other liver cancer
+670,Pancreas cancer,3,NA,NA,6.,Pancreas cancer,NA
+680,"Trachea, bronchus, lung cancers",3,NA,NA,7.,"Trachea, bronchus, lung cancers",NA
+690,Melanoma and other skin cancers,3,NA,NA,8.,Melanoma and other skin cancers,NA
+691,Malignant skin melanoma,4,NA,NA,NA,a.,Malignant skin melanoma
+692,Non-melanoma skin cancer,4,NA,NA,NA,b.,Non-melanoma skin cancer
+700,Breast cancer,3,NA,NA,9.,Breast cancer,NA
+710,Cervix uteri cancer,3,NA,NA,10.,Cervix uteri cancer,NA
+720,Corpus uteri cancer,3,NA,NA,11.,Corpus uteri cancer,NA
+730,Ovary cancer,3,NA,NA,12.,Ovary cancer,NA
+740,Prostate cancer,3,NA,NA,13.,Prostate cancer,NA
+742,Testicular cancer,3,NA,NA,14.,Testicular cancer,NA
+745,Kidney cancer,3,NA,NA,15.,Kidney cancer,NA
+750,Bladder cancer,3,NA,NA,16.,Bladder cancer,NA
+751,Brain and nervous system cancers,3,NA,NA,17.,Brain and nervous system cancers,NA
+752,Gallbladder and biliary tract cancer,3,NA,NA,18.,Gallbladder and biliary tract cancer,NA
+753,Larynx cancer,3,NA,NA,19.,Larynx cancer,NA
+754,Thyroid cancer,3,NA,NA,20.,Thyroid cancer,NA
+755,Mesothelioma,3,NA,NA,21.,Mesothelioma,NA
+760,"Lymphomas, multiple myeloma",3,NA,NA,22.,"Lymphomas, multiple myeloma",NA
+761,Hodgkin lymphoma,4,NA,NA,NA,a.,Hodgkin lymphoma
+762,Non-Hodgkin lymphoma,4,NA,NA,NA,b.,Non-Hodgkin lymphoma
+763,Multiple myeloma,4,NA,NA,NA,c.,Multiple myeloma
+770,Leukaemia,3,NA,NA,23.,Leukaemia,NA
+780,Other malignant neoplasms,3,NA,NA,24.,Other malignant neoplasms,NA
+790,Other neoplasms,2,NA,B.,Other neoplasms,NA,NA
+800,Diabetes mellitus,2,NA,C.,Diabetes mellitus,NA,NA
+810,"Endocrine, blood, immune disorders",2,NA,D.,"Endocrine, blood, immune disorders",NA,NA
+811,Thalassaemias,3,NA,NA,1.,Thalassaemias,NA
+812,Sickle cell disorders and trait,3,NA,NA,2.,Sickle cell disorders and trait,NA
+813,Other haemoglobinopathies and haemolytic anaemias,3,NA,NA,3.,Other haemoglobinopathies and haemolytic anaemias,NA
+814,"Other endocrine, blood and immune disorders",3,NA,NA,4.,"Other endocrine, blood and immune disorders",NA
+820,Mental and substance use disorders,2,NA,E.,Mental and substance use disorders,NA,NA
+830,Depressive disorders,3,NA,NA,1.,Depressive disorders,NA
+840,Bipolar disorder,3,NA,NA,2.,Bipolar disorder,NA
+850,Schizophrenia,3,NA,NA,3.,Schizophrenia,NA
+860,Alcohol use disorders,3,NA,NA,4.,Alcohol use disorders,NA
+870,Drug use disorders,3,NA,NA,5.,Drug use disorders,NA
+871,Opioid use disorders,4,NA,NA,NA,a.,Opioid use disorders
+872,Cocaine use disorders,4,NA,NA,NA,b.,Cocaine use disorders
+873,Amphetamine use disorders,4,NA,NA,NA,c.,Amphetamine use disorders
+874,Cannabis use disorders,4,NA,NA,NA,d.,Cannabis use disorders
+875,Other drug use disorders,4,NA,NA,NA,e.,Other drug use disorders
+880,Anxiety disorders,3,NA,NA,6.,Anxiety disorders,NA
+890,Eating disorders,3,NA,NA,7.,Eating disorders,NA
+900,Austism and Asperger syndrome,3,NA,NA,8.,Austism and Asperger syndrome,NA
+910,Childhood behavioural disorders,3,NA,NA,9.,Childhood behavioural disorders,NA
+911,Attention deficit/hyperactivity syndrome,4,NA,NA,NA,a.,Attention deficit/hyperactivity syndrome
+912,Conduct disorder,4,NA,NA,NA,b.,Conduct disorder
+920,Idiopathic intellectual disability,3,NA,NA,10.,Idiopathic intellectual disability,NA
+930,Other mental and behavioural disorders,3,NA,NA,11.,Other mental and behavioural disorders,NA
+940,Neurological conditions,2,NA,F.,Neurological conditions,NA,NA
+950,Alzheimer disease and other dementias,3,NA,NA,1.,Alzheimer disease and other dementias,NA
+960,Parkinson disease,3,NA,NA,2.,Parkinson disease,NA
+970,Epilepsy,3,NA,NA,3.,Epilepsy,NA
+980,Multiple sclerosis,3,NA,NA,4.,Multiple sclerosis,NA
+990,Migraine,3,NA,NA,5.,Migraine,NA
+1000,Non-migrane headache,3,NA,NA,6.,Non-migrane headache,NA
+1010,Other neurological conditions,3,NA,NA,7.,Other neurological conditions,NA
+1020,Sense organ diseases,2,NA,G.,Sense organ diseases,NA,NA
+1030,Glaucoma,3,NA,NA,1.,Glaucoma,NA
+1040,Cataracts,3,NA,NA,2.,Cataracts,NA
+1050,Uncorrected refractive errors,3,NA,NA,3.,Uncorrected refractive errors,NA
+1060,Macular degeneration,3,NA,NA,4.,Macular degeneration,NA
+1070,Other vision loss,3,NA,NA,5.,Other vision loss,NA
+1080,Other hearing loss,3,NA,NA,6.,Other hearing loss,NA
+1090,Other sense organ disorders,3,NA,NA,7.,Other sense organ disorders,NA
+1100,Cardiovascular diseases,2,NA,H.,Cardiovascular diseases,NA,NA
+1110,Rheumatic heart disease,3,NA,NA,1.,Rheumatic heart disease,NA
+1120,Hypertensive heart disease,3,NA,NA,2.,Hypertensive heart disease,NA
+1130,Ischaemic heart disease,3,NA,NA,3.,Ischaemic heart disease,NA
+1140,Stroke,3,NA,NA,4.,Stroke,NA
+1141,Ischaemic stroke,4,NA,NA,NA,a.,Ischaemic stroke
+1142,Haemorrhagic stroke,4,NA,NA,NA,b.,Haemorrhagic stroke
+1150,"Cardiomyopathy, myocarditis, endocarditis",3,NA,NA,5.,"Cardiomyopathy, myocarditis, endocarditis",NA
+1160,Other circulatory diseases,3,NA,NA,6.,Other circulatory diseases,NA
+1170,Respiratory diseases,2,NA,I.,Respiratory diseases,NA,NA
+1180,Chronic obstructive pulmonary disease,3,NA,NA,1.,Chronic obstructive pulmonary disease,NA
+1190,Asthma,3,NA,NA,2.,Asthma,NA
+1200,Other respiratory diseases,3,NA,NA,3.,Other respiratory diseases,NA
+1210,Digestive diseases,2,NA,J.,Digestive diseases,NA,NA
+1220,Peptic ulcer disease,3,NA,NA,1.,Peptic ulcer disease,NA
+1230,Cirrhosis of the liver,3,NA,NA,2.,Cirrhosis of the liver,NA
+1231,Cirrhosis due to hepatitis B,4,NA,NA,NA,a.,Cirrhosis due to hepatitis B
+1232,Cirrhosis due to hepatitis C,4,NA,NA,NA,b.,Cirrhosis due to hepatitis C
+1233,Cirrhosis due to alcohol use,4,NA,NA,NA,c.,Cirrhosis due to alcohol use
+1234,Other liver cirrhosis,4,NA,NA,NA,d.,Other liver cirrhosis
+1240,Appendicitis,3,NA,NA,3.,Appendicitis,NA
+1241,Gastritis and duodenitis,3,NA,NA,4.,Gastritis and duodenitis,NA
+1242,Paralytic ileus and intestinal obstruction,3,NA,NA,5.,Paralytic ileus and intestinal obstruction,NA
+1244,Inflammatory bowel disease,3,NA,NA,6.,Inflammatory bowel disease,NA
+1246,Gallbladder and biliary diseases,3,NA,NA,7.,Gallbladder and biliary diseases,NA
+1248,Pancreatitis,3,NA,NA,8.,Pancreatitis,NA
+1250,Other digestive diseases,3,NA,NA,9.,Other digestive diseases,NA
+1260,Genitourinary diseases,2,NA,K.,Genitourinary diseases,NA,NA
+1270,Kidney diseases,3,NA,NA,1.,Kidney diseases,NA
+1271,Acute glomerulonephritis,4,NA,NA,NA,a.,Acute glomerulonephritis
+1272,Chronic kidney disease due to diabetes,4,NA,NA,NA,b.,Chronic kidney disease due to diabetes
+1273,Other chronic kidney disease,4,NA,NA,NA,c.,Other chronic kidney disease
+1280,Benign prostatic hyperplasia,3,NA,NA,2.,Benign prostatic hyperplasia,NA
+1290,Urolithiasis,3,NA,NA,3.,Urolithiasis,NA
+1300,Other urinary diseases,3,NA,NA,4.,Other urinary diseases,NA
+1310,Infertility,3,NA,NA,5.,Infertility,NA
+1320,Gynecological diseases,3,NA,NA,6.,Gynecological diseases,NA
+1330,Skin diseases,2,NA,L.,Skin diseases,NA,NA
+1340,Musculoskeletal diseases,2,NA,M.,Musculoskeletal diseases,NA,NA
+1350,Rheumatoid arthritis,3,NA,NA,1.,Rheumatoid arthritis,NA
+1360,Osteoarthritis,3,NA,NA,2.,Osteoarthritis,NA
+1370,Gout,3,NA,NA,3.,Gout,NA
+1380,Back and neck pain,3,NA,NA,4.,Back and neck pain,NA
+1390,Other musculoskeletal disorders,3,NA,NA,5.,Other musculoskeletal disorders,NA
+1400,Congenital anomalies,2,NA,N.,Congenital anomalies,NA,NA
+1410,Neural tube defects,3,NA,NA,1.,Neural tube defects,NA
+1420,Cleft lip and cleft palate,3,NA,NA,2.,Cleft lip and cleft palate,NA
+1430,Down syndrome,3,NA,NA,3.,Down syndrome,NA
+1440,Congenital heart anomalies,3,NA,NA,4.,Congenital heart anomalies,NA
+1450,Other chromosomal anomalies,3,NA,NA,5.,Other chromosomal anomalies,NA
+1460,Other congenital anomalies,3,NA,NA,6.,Other congenital anomalies,NA
+1470,Oral conditions,2,NA,O.,Oral conditions,NA,NA
+1480,Dental caries,3,NA,NA,1.,Dental caries,NA
+1490,Periodontal disease,3,NA,NA,2.,Periodontal disease,NA
+1500,Edentulism,3,NA,NA,3.,Edentulism,NA
+1502,Other oral disorders,3,NA,NA,4.,Other oral disorders,NA
+1505,Sudden infant death syndrome,2,NA,P.,Sudden infant death syndrome,NA,NA
+1510,Injuries,1,III.,Injuries,NA,NA,NA
+1520,Unintentional injuries,2,NA,A.,Unintentional injuries,NA,NA
+1530,Road injury,3,NA,NA,1.,Road injury,NA
+1540,Poisonings,3,NA,NA,2.,Poisonings,NA
+1550,Falls,3,NA,NA,3.,Falls,NA
+1560,"Fire, heat and hot substances",3,NA,NA,4.,"Fire, heat and hot substances",NA
+1570,Drowning,3,NA,NA,5.,Drowning,NA
+1575,Exposure to mechanical forces,3,NA,NA,6.,Exposure to mechanical forces,NA
+1580,Natural disasters,3,NA,NA,7.,Natural disasters,NA
+1590,Other unintentional injuries,3,NA,NA,8.,Other unintentional injuries,NA
+1600,Intentional injuries,2,NA,B.,Intentional injuries,NA,NA
+1610,Self-harm,3,NA,NA,1.,Self-harm,NA
+1620,Interpersonal violence,3,NA,NA,2.,Interpersonal violence,NA
+1630,Collective violence and legal intervention,3,NA,NA,3.,Collective violence and legal intervention,NA
+1700,Other COVID-19 pandemic-related outcomes,2,NA,C.,Other COVID-19 pandemic-related outcomes,NA,NA

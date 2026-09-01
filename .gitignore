@@ -65,5 +65,8 @@ scrapt.R
 # large local data files
 2026/06_Jun/airline_2m.csv
 
-
+202*/.DS_Store
+2026?.DS_store
+R/.DS_Store
+.DS_Store
 
