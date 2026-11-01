@@ -70,3 +70,9 @@ scrapt.R
 R/.DS_Store
 .DS_Store
 
+# ATUS raw datasets
+*.dat
+*.dat.gz
+
+
+

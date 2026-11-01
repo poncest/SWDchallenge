@@ -27,10 +27,10 @@
 | ![](08_Aug/img/08_Aug.png "August 2026") |
 | [Sep<br>bump it!](https://github.com/poncest/SWDchallenge/tree/main/2026/09_Sep) |
 | ![](09_Sep/img/09_Sep.png "September") |
-|  |
-|  |
-|  |
-|  |
+| [September Exercise<br>explore visual possibilities](https://github.com/poncest/SWDchallenge/tree/main/2026/Ex_009) |
+| ![](Ex_009/img/Ex_009.png "September Excercise") |
+| [Nov<br>tell a story of change](https://github.com/poncest/SWDchallenge/tree/main/2026/11_Nov) |
+| ![](11_Nov/img/11_Nov.png "November 2026") |
 |  |
 |  |
 |  |
